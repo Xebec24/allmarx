@@ -44,7 +44,7 @@ public class Dagger : MonoBehaviour
             forceDirection = (hit.point - attackpoint.position).normalized;
         }
         // add force
-        Vector3 forceToAdd = forceDirection + transform.up * throwUpwardForce;
+        Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
         ProjectileRb.AddForce(forceToAdd, ForceMode.Impulse);
         totalThrow--;
         // implement throwCooldown
@@ -57,6 +57,7 @@ public class Dagger : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
+        
         // Check if the collided object has a specific tag or component
         if (collision.gameObject.CompareTag("dagger")) // Replace "CloneTag" with the actual tag of your clones
         {
