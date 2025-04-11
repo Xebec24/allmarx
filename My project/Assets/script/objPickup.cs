@@ -44,21 +44,21 @@ public class objPickup : MonoBehaviour
     {
         if (interactable == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 objTransform.parent = cameraTrans;
                 objRigidbody.useGravity = false;
                 pickedup = true;
             }
-            if (Input.GetMouseButtonUp(0))
-            {
+            if (Input.GetKeyUp(KeyCode.E))
+                {
                 objTransform.parent = null;
                 objRigidbody.useGravity = true;
                 pickedup = false;
             }
             if (pickedup == true)
             {
-                if (Input.GetMouseButtonDown(1))
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     objTransform.parent = null;
                     objRigidbody.useGravity = true;
