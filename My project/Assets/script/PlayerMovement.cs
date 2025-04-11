@@ -33,15 +33,16 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        
         if(time < timer)
         {
             time += Time.deltaTime;
         }
         PlayerInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         CameraInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Sprint();
         MovePlayer();
         MoveCamera();
-        Sprint();
         crouch();
         prone();
         ifYouAreMoving();
@@ -70,14 +71,15 @@ public class PlayerMovement : MonoBehaviour
     void Sprint()
     {
         bool numberStamiaNeg = true;
-        bool Shift = Input.GetKey(KeyCode.RightShift) ^ Input.GetKey(KeyCode.LeftShift);
+        bool Shift = Input.GetKey(KeyCode.LeftShift) ^ Input.GetKey(KeyCode.RightShift);
         bool crouch = Input.GetKey(KeyCode.LeftControl) ^ Input.GetKey(KeyCode.RightControl);
         bool prone = Input.GetKey(KeyCode.Z);
-        if(Shift && !crouch && !prone && stamina > 0f && numberStamiaNeg)
+        
+        if (Shift && !crouch && !prone && stamina > 0)
         {
             speed = sprintSpeed;
         }
-        else if (!crouch && !prone)
+        else if(!crouch && !prone)
         {
             speed = NormalSpeed;
         }
