@@ -6,6 +6,7 @@ TagManager:
   tags:
   - dagger
   - player
+  - Damage
   layers:
   - Default
   - TransparentFX

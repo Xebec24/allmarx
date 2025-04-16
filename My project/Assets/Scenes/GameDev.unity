@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 49695374}
   m_Layer: 0
   m_Name: Damage
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7f3782e751e5e41b52cb9afda8bbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}
+  healthbar: {fileID: 1425487269}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +695,6 @@ GameObject:
   - component: {fileID: 755802177}
   - component: {fileID: 755802176}
   - component: {fileID: 755802175}
-  - component: {fileID: 755802174}
   m_Layer: 5
   m_Name: Health bar
   m_TagString: Untagged
@@ -703,21 +702,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &755802174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755802173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f912b4318233b4bb1f1e8a910b8566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthBar: {fileID: 2001006451}
-  health: 100
-  startHealth: 100
 --- !u!114 &755802175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,6 +927,7 @@ GameObject:
   - component: {fileID: 1425487266}
   - component: {fileID: 1425487268}
   - component: {fileID: 1425487267}
+  - component: {fileID: 1425487269}
   m_Layer: 5
   m_Name: HealthBarBG
   m_TagString: Untagged
@@ -1009,6 +994,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425487265}
   m_CullTransparentMesh: 1
+--- !u!114 &1425487269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425487265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f912b4318233b4bb1f1e8a910b8566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthBar: {fileID: 2001006451}
+  health: 100
+  startHealth: 100
 --- !u!1 &1459436038
 GameObject:
   m_ObjectHideFlags: 0
