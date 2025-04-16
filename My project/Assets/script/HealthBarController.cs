@@ -18,6 +18,7 @@ public class HealthBarController : MonoBehaviour
      {
         if(health == 0 ^ health < 0)
         {
+            Cursor.lockState = CursorLockMode.Confined;
             SceneManager.LoadScene("GameOverScreen");
         }
      }
