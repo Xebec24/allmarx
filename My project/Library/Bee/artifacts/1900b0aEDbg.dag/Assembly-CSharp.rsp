@@ -343,9 +343,10 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/MainMenu.cs"
+"Assets/CollisonController.cs"
 "Assets/script/Dagger.cs"
 "Assets/script/HealthBarController.cs"
+"Assets/script/MainMenu.cs"
 "Assets/script/objPickup.cs"
 "Assets/script/PlayerMovement.cs"
 -langversion:9.0
