@@ -350,6 +350,7 @@
 "Assets/script/MainMenu.cs"
 "Assets/script/objPickup.cs"
 "Assets/script/PlayerMovement.cs"
+"Assets/StaminaController.cs"
 -langversion:9.0
 /deterministic
 /optimize-
