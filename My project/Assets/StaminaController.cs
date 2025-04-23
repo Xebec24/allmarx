@@ -12,6 +12,7 @@ public class StaminaController : MonoBehaviour
     float time;
     float timer = 2;
     public float staminaNeg;
+    public float staminaRegen;
 
     public void Update()
     {
@@ -29,6 +30,12 @@ public class StaminaController : MonoBehaviour
             stamina = stamina - staminaNeg;
             time = time - timer;
 
+
+        }
+        if (!Sprint && !crouch && !prone && stamina <= staminaMax && time > 2 && !A)
+        {
+            stamina = stamina + staminaRegen;
+            time = time - timer;
         }
         StaminaBar.fillAmount = stamina / staminaMax;
     }
