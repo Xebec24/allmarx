@@ -1115,6 +1115,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1203,6 +1204,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1900034, y: 0.16880798, z: 1.7599163}
   m_Center: {x: 0.0105957985, y: -0.07362747, z: 0.6171684}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3a41c7daa30a04cb8d2a7ad2c5b37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedItemGrid: {fileID: 235007821}
 --- !u!1 &1115211727
 GameObject:
   m_ObjectHideFlags: 0
