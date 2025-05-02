@@ -9,6 +9,6 @@ public class InventoryController : MonoBehaviour
     private void Update()
     {
         if(selectedItemGrid == null) { return; }
-        Debug.Log(selectedItemGrid.GetTileGridPosition(Input.mousePosition));
+        
     }
 }
