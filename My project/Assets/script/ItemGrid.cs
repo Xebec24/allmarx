@@ -8,10 +8,12 @@ public class ItemGrid : MonoBehaviour
     const float tileSizeHeight = 16;
     InventoryItem[,] InventoryItemSlot;
     RectTransform rectTransform;
+    [SerializeField] int gridSizeWidth = 20;
+    [SerializeField] int gridSizeHeight = 10;
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        Init(20, 10);
+        Init(gridSizeWidth, gridSizeHeight);
     }
     private void Init(int width, int height)
     {
