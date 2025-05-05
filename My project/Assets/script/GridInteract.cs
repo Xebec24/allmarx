@@ -8,7 +8,11 @@ public class GridInteract : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 {
     InventoryController inventoryController;
     ItemGrid itemGrid;
-
+    private void Awake()
+    {
+        inventoryController = FindObjectOfType(typeof(InventoryController)) as InventoryController;
+        itemGrid = GetComponent<ItemGrid>();
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         inventoryController.selectedItemGrid = itemGrid;
@@ -19,9 +23,5 @@ public class GridInteract : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         inventoryController.selectedItemGrid = null;
     }
 
-    private void Awake()
-    {
-        inventoryController = FindObjectOfType(typeof(InventoryController)) as InventoryController;
-        itemGrid = GetComponent<ItemGrid>();
-    }
+  
 }

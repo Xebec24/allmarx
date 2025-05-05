@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         NormalSpeed = speed;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
     void Update()
     {
