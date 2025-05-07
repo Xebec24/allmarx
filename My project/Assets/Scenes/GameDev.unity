@@ -553,6 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridSizeWidth: 20
   gridSizeHeight: 10
+  inventoryItemPrefab: {fileID: 9185556369313349434, guid: 81ee831e6d640b24cb83ed53b54b0d9d, type: 3}
 --- !u!114 &235007822
 MonoBehaviour:
   m_ObjectHideFlags: 0
