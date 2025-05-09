@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,9 +16,18 @@ public class ItemGrid : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         Init(gridSizeWidth, gridSizeHeight);
+
         InventoryItem inventoryItem = Instantiate(inventoryItemPrefab).GetComponent<InventoryItem>();
-        PlaceItem(inventoryItem, 3, 2);
+        PlaceItem(inventoryItem, 1, 1);
     }
+
+    public InventoryItem PickUpItem(int x, int y)
+    {
+        InventoryItem toReturn = inventoryItemSlot[x, y];
+        inventoryItemSlot[x, y] = null;
+        return toReturn;
+    }
+
     private void Init(int width, int height)
     {
         inventoryItemSlot = new InventoryItem[width, height];
@@ -41,9 +51,11 @@ public class ItemGrid : MonoBehaviour
         RectTransform rectTransform = inventoryItem.GetComponent<RectTransform>();
         rectTransform.SetParent(this.rectTransform);
         inventoryItemSlot[posX, posY] = inventoryItem;
+
         Vector2 position = new Vector2();
         position.x = posX * gridSizeWidth + gridSizeWidth / 2;
-        position.y = posY * gridSizeHeight + gridSizeHeight / 2;
+        position.y = -(posY * gridSizeHeight + gridSizeHeight / 2);
+
         rectTransform.localPosition = position;
 
     }

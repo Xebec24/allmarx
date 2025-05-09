@@ -536,7 +536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 563.6, y: 212}
+  m_AnchoredPosition: {x: 496.4, y: 194.8}
   m_SizeDelta: {x: 320, y: 160}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &235007821
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridSizeWidth: 20
   gridSizeHeight: 10
-  inventoryItemPrefab: {fileID: 9185556369313349434, guid: 81ee831e6d640b24cb83ed53b54b0d9d, type: 3}
+  inventoryItemPrefab: {fileID: 6069289488022098502, guid: eec7184a95d02624991aa125ae051369, type: 3}
 --- !u!114 &235007822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ RectTransform:
   m_Children:
   - {fileID: 235007820}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1559,7 +1559,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480879344
 GameObject:
