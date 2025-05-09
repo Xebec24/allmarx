@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
         if(time < timer)
         {
             time += Time.deltaTime;
